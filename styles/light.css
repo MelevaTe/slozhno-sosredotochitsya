@@ -1,5 +1,4 @@
 :root .theme_light {
-  --main-font: 'IBM Plex mono';
   --bg-color: #FFF1F7;
   --header-color: #FFC2E6;
   --accent-color: #FF8DCB;
@@ -12,13 +11,8 @@
 
 .page.theme_light {
   color: var(--text-color);
-  font-family: var(--main-font, serif);
   background-color: var(--bg-color);
   background-image: var(--bg-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .theme_light .rec_conainer {
@@ -26,10 +20,6 @@
 }
 
 .block-heading {
-  color: var(--text-color-heading);
-}
-
-.block-heading-s {
   color: var(--text-color-heading);
 }
 
@@ -41,12 +31,12 @@
   color: var(--button-color);
 }
 
-.header::after {
+.decorated-zone::after {
   border-inline-end: 1px solid var(--button-color);
   border-block-start: 1px solid var(--button-color);
 }
 
-.header::before {
+.decorated-zone::before {
   border-inline-start: 1px solid var(--button-color);
   border-block-end: 1px solid var(--button-color);
 }
@@ -60,23 +50,13 @@ a:focus {
   outline: none;
 }
 
-button:focus-visible {
+.header__theme-menu-button:focus-visible {
   text-decoration: underline solid var(--button-color);
   text-underline-offset: 3px;
 }
 
-a:focus-visible {
+.links:focus-visible {
   outline: 1px solid var(--text-color);
-}
-
-.footer::after {
-  border-inline-end: 1px solid var(--button-color);
-  border-block-start: 1px solid var(--button-color);
-}
-
-.footer::before {
-  border-inline-start: 1px solid var(--button-color);
-  border-block-end: 1px solid var(--button-color);
 }
 
 .theme_light .rec_container {
@@ -87,7 +67,6 @@ a:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-font: 'IBM Plex mono';
     --bg-color: #FFF1F7;
     --header-color: #FFC2E6;
     --accent-color: #FF8DCB;

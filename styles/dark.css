@@ -5,7 +5,6 @@
 */
 
 :root .theme_dark {
-  --main-font: 'IBM Plex mono';
   --bg-color: #000028;
   --text-color: #F1B2CE;
   --text-color-heading: #000028;
@@ -20,13 +19,8 @@
 
 .page.theme_dark {
   color: var(--text-color);
-  font-family: var(--main-font, serif);
   background-color: var(--bg-color);
   background-image: var(--bg-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 
