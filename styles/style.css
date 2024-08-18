@@ -64,8 +64,8 @@
 .rec_container::after {
   content: '';
   position: absolute;
-  top: 9px;
-  left: 44px;
+  top: 8px;
+  left: 43px;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -134,7 +134,7 @@ button:disabled {
 }
 
 .block-heading {
-  color: var(--header-text-color);
+  color: var(--text-color-heading);
   font-family: var(--main-font, serif);
   font-weight: 700;
   font-size: 18px;
@@ -243,43 +243,18 @@ button:disabled {
   .decorated-zone::after {
     top: 20px;
     right: 20px;
-    border-inline-end: 1px solid var(--accent-color);
-    border-block-start: 1px solid var(--accent-color);
   }
-  
+
   .decorated-zone::before {
     bottom: 20px;
     left: 20px;
-    border-inline-start: 1px solid var(--accent-color);
-    border-block-end: 1px solid var(--accent-color);
   }
 
   .rec_container {
-    position: absolute;
     top: 20px;
     right: 38px;
-    display: flex;
-    margin-inline-end: 10px;
-    color: var(--accent-color);
-    font-family: var(--main-font, serif);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: uppercase;
   }
   
-  .rec_container::after {
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: 43px;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 4px 2px var(--accent-color);
-    background-color: var(--accent-color);
-  }
-
   .header__theme-menu {
     align-self: center;
     margin-block-start: 85px;
